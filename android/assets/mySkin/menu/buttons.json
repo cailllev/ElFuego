@@ -1,0 +1,39 @@
+{
+  "Color": {
+    "white": { "r": 1, "g": 1, "b": 1, "a": 1 },
+    "red": { "r": 1, "g": 0, "b": 0, "a": 1 },
+    "yellow": { "r": 0.5, "g": 0.5, "b": 0, "a": 1 }
+  },
+  "BitmapFont": {
+    "bold": {
+      "file": "../font/myFont/myQuicksandDarkFire.fnt"
+    }
+  },
+  "LabelStyle": {
+    "default": {
+      "font": "bold"
+    }
+  },
+  "ImageTextButtonStyle": {
+    "default": {
+      "font": "bold",
+      "up": "start",
+      "down": "start"
+    },
+    "start": {
+      "font": "bold",
+      "up": "start",
+      "down": "start-down"
+    },
+    "options": {
+      "font": "bold",
+      "up": "options",
+      "down": "options-down"
+    },
+    "quit": {
+      "font": "bold",
+      "up": "quit",
+      "down": "quit-down"
+    }
+  }
+}

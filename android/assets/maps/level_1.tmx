@@ -1,0 +1,1189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.5" orientation="isometric" renderorder="left-down" width="40" height="40" tilewidth="128" tileheight="64" infinite="0" nextlayerid="6" nextobjectid="10">
+ <properties>
+  <property name="name" value="level_1.tmx"/>
+ </properties>
+ <tileset firstgid="1" name="grass" tilewidth="132" tileheight="99" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="99" source="objects/grass.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="2" name="road_left_right" tilewidth="132" tileheight="101" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="speed" type="int" value="200"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="101" source="objects/road_left_right.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="3" name="road_top_bottom" tilewidth="132" tileheight="101" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="speed" type="int" value="200"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="101" source="objects/road_top_bottom.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="4" name="road_left_right_crosswalk" tilewidth="132" tileheight="101" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="speed" type="int" value="200"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="101" source="objects/road_left_right_crosswalk.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="5" name="road_top_bottom_crosswalk" tilewidth="133" tileheight="101" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="speed" type="int" value="200"/>
+  </properties>
+  <tile id="0">
+   <image width="133" height="101" source="objects/road_top_bottom_crosswalk.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="6" name="road_left_right_way_b" tilewidth="132" tileheight="101" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="speed" type="int" value="200"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="101" source="objects/road_left_right_way_b.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="7" name="road_left_right_way_t" tilewidth="132" tileheight="101" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="speed" type="int" value="200"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="101" source="objects/road_left_right_way_t.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="8" name="road_top_bottom_way_l" tilewidth="132" tileheight="101" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="speed" type="int" value="200"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="101" source="objects/road_top_bottom_way_l.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="9" name="road_top_bottom_way_r" tilewidth="132" tileheight="101" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="speed" type="int" value="200"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="101" source="objects/road_top_bottom_way_r.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="10" name="way" tilewidth="132" tileheight="101" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="speed" type="int" value="200"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="101" source="objects/road_left_right.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="11" name="road_crossing_left" tilewidth="132" tileheight="101" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="speed" type="int" value="100"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="101" source="objects/road_crossing_left.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="12" name="road_crossing_all" tilewidth="132" tileheight="101" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="speed" type="int" value="50"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="101" source="objects/road_crossing_all.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="13" name="road_crossing_right" tilewidth="132" tileheight="101" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="speed" type="int" value="100"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="101" source="objects/road_crossing_right.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="14" name="road_crossing_bottom" tilewidth="132" tileheight="101" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="speed" type="int" value="100"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="101" source="objects/road_crossing_bottom.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="15" name="road_crossing_top" tilewidth="132" tileheight="101" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="speed" type="int" value="100"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="101" source="objects/road_crossing_top.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="16" name="road_turn_bottom_right" tilewidth="132" tileheight="101" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="speed" type="int" value="100"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="101" source="objects/road_turn_bottom_right.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="17" name="road_turn_top_right" tilewidth="132" tileheight="101" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="speed" type="int" value="100"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="101" source="objects/road_turn_top_right.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="18" name="road_turn_left_bottom" tilewidth="132" tileheight="101" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="speed" type="int" value="100"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="101" source="objects/road_turn_left_bottom.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="19" name="road_turn_left_top" tilewidth="132" tileheight="101" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="speed" type="int" value="100"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="101" source="objects/road_turn_left_top.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="20" name="building_right_1" tilewidth="132" tileheight="127" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/building_right_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="21" name="building_left_1" tilewidth="133" tileheight="128" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="133" height="127" source="objects/building_left_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="22" name="building_top_1" tilewidth="132" tileheight="128" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/building_top_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="23" name="building_bottom_1" tilewidth="132" tileheight="127" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/building_bottom_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="24" name="fire_truck_top_bottom" tilewidth="132" tileheight="99" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="vehicle_speed" type="int" value="400"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="99" source="objects/fire_truck_top_bottom.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="25" name="fire_department" tilewidth="132" tileheight="99" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="99" source="objects/fire_department.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="26" name="burning_house_right_1" tilewidth="132" tileheight="127" tilecount="2" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/burning_house_right_1.png"/>
+   <animation>
+    <frame tileid="0" duration="250"/>
+    <frame tileid="1" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/burning_house_right_1_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="28" name="burning_house_bottom_1" tilewidth="132" tileheight="127" tilecount="2" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/burning_house_bottom_1.png"/>
+   <animation>
+    <frame tileid="0" duration="250"/>
+    <frame tileid="1" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/burning_house_bottom_1_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="30" name="burning_house_left_1" tilewidth="133" tileheight="128" tilecount="2" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="133" height="127" source="objects/burning_house_left_1.png"/>
+   <animation>
+    <frame tileid="0" duration="250"/>
+    <frame tileid="1" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="133" height="127" source="objects/burning_house_left_1_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="32" name="burning_house_top_1" tilewidth="132" tileheight="128" tilecount="2" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/burning_house_top_1.png"/>
+   <animation>
+    <frame tileid="0" duration="250"/>
+    <frame tileid="1" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/burning_house_top_1_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="34" name="extinguish_house_right_2" tilewidth="132" tileheight="128" tilecount="6" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/building_right_2.png"/>
+   <animation>
+    <frame tileid="1" duration="200"/>
+    <frame tileid="2" duration="200"/>
+    <frame tileid="3" duration="200"/>
+    <frame tileid="4" duration="150"/>
+    <frame tileid="5" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/extinguish_house_right_2.png"/>
+  </tile>
+  <tile id="2">
+   <image width="132" height="127" source="objects/extinguish_house_right_2_1.png"/>
+  </tile>
+  <tile id="3">
+   <image width="132" height="127" source="objects/extinguish_house_right_2_2.png"/>
+  </tile>
+  <tile id="4">
+   <image width="132" height="127" source="objects/extinguish_house_right_2_3.png"/>
+  </tile>
+  <tile id="5">
+   <image width="132" height="127" source="objects/extinguish_house_right_2_4.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="40" name="extinguish_house_bottom_2" tilewidth="132" tileheight="128" tilecount="6" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/building_bottom_2.png"/>
+   <animation>
+    <frame tileid="1" duration="200"/>
+    <frame tileid="2" duration="200"/>
+    <frame tileid="3" duration="200"/>
+    <frame tileid="4" duration="150"/>
+    <frame tileid="5" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/extinguish_house_bottom_2.png"/>
+  </tile>
+  <tile id="2">
+   <image width="132" height="127" source="objects/extinguish_house_bottom_2_1.png"/>
+  </tile>
+  <tile id="3">
+   <image width="132" height="127" source="objects/extinguish_house_bottom_2_2.png"/>
+  </tile>
+  <tile id="4">
+   <image width="132" height="127" source="objects/extinguish_house_bottom_2_3.png"/>
+  </tile>
+  <tile id="5">
+   <image width="132" height="127" source="objects/extinguish_house_bottom_2_4.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="46" name="extinguish_house_left_2" tilewidth="133" tileheight="128" tilecount="6" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="128" source="objects/building_left_2.png"/>
+   <animation>
+    <frame tileid="1" duration="200"/>
+    <frame tileid="2" duration="200"/>
+    <frame tileid="3" duration="200"/>
+    <frame tileid="4" duration="150"/>
+    <frame tileid="5" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/extinguish_house_left_2.png"/>
+  </tile>
+  <tile id="2">
+   <image width="132" height="127" source="objects/extinguish_house_left_2_1.png"/>
+  </tile>
+  <tile id="3">
+   <image width="132" height="127" source="objects/extinguish_house_left_2_2.png"/>
+  </tile>
+  <tile id="4">
+   <image width="132" height="127" source="objects/extinguish_house_left_2_3.png"/>
+  </tile>
+  <tile id="5">
+   <image width="132" height="127" source="objects/extinguish_house_left_2_4.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="52" name="extinguish_house_top_2" tilewidth="132" tileheight="128" tilecount="6" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="128" source="objects/building_top_2.png"/>
+   <animation>
+    <frame tileid="1" duration="200"/>
+    <frame tileid="2" duration="200"/>
+    <frame tileid="3" duration="200"/>
+    <frame tileid="4" duration="150"/>
+    <frame tileid="5" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/extinguish_house_top_2.png"/>
+  </tile>
+  <tile id="2">
+   <image width="132" height="127" source="objects/extinguish_house_top_2_1.png"/>
+  </tile>
+  <tile id="3">
+   <image width="132" height="127" source="objects/extinguish_house_top_2_2.png"/>
+  </tile>
+  <tile id="4">
+   <image width="132" height="127" source="objects/extinguish_house_top_2_3.png"/>
+  </tile>
+  <tile id="5">
+   <image width="132" height="127" source="objects/extinguish_house_top_2_4.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="58" name="extinguish_house_right_1" tilewidth="132" tileheight="128" tilecount="6" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/building_right_1.png"/>
+   <animation>
+    <frame tileid="1" duration="200"/>
+    <frame tileid="2" duration="200"/>
+    <frame tileid="3" duration="200"/>
+    <frame tileid="4" duration="150"/>
+    <frame tileid="5" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/extinguish_house_right_1.png"/>
+  </tile>
+  <tile id="2">
+   <image width="132" height="127" source="objects/extinguish_house_right_1_1.png"/>
+  </tile>
+  <tile id="3">
+   <image width="132" height="127" source="objects/extinguish_house_right_1_2.png"/>
+  </tile>
+  <tile id="4">
+   <image width="132" height="127" source="objects/extinguish_house_right_1_3.png"/>
+  </tile>
+  <tile id="5">
+   <image width="132" height="127" source="objects/extinguish_house_right_1_4.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="64" name="extinguish_house_bottom_1" tilewidth="132" tileheight="128" tilecount="6" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/building_bottom_1.png"/>
+   <animation>
+    <frame tileid="1" duration="200"/>
+    <frame tileid="2" duration="200"/>
+    <frame tileid="3" duration="200"/>
+    <frame tileid="4" duration="150"/>
+    <frame tileid="5" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/extinguish_house_bottom_1.png"/>
+  </tile>
+  <tile id="2">
+   <image width="132" height="127" source="objects/extinguish_house_bottom_1_1.png"/>
+  </tile>
+  <tile id="3">
+   <image width="132" height="127" source="objects/extinguish_house_bottom_1_2.png"/>
+  </tile>
+  <tile id="4">
+   <image width="132" height="127" source="objects/extinguish_house_bottom_1_3.png"/>
+  </tile>
+  <tile id="5">
+   <image width="132" height="127" source="objects/extinguish_house_bottom_1_4.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="70" name="grey" tilewidth="132" tileheight="68" tilecount="1" columns="1">
+  <grid orientation="orthogonal" width="132" height="64"/>
+  <image source="objects/cityTiles_072.png" width="132" height="99"/>
+ </tileset>
+ <tileset firstgid="71" name="extinguish_house_left_1" tilewidth="133" tileheight="128" tilecount="6" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="133" height="127" source="objects/building_left_1.png"/>
+   <animation>
+    <frame tileid="1" duration="200"/>
+    <frame tileid="2" duration="200"/>
+    <frame tileid="3" duration="200"/>
+    <frame tileid="4" duration="150"/>
+    <frame tileid="5" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/extinguish_house_left_1.png"/>
+  </tile>
+  <tile id="2">
+   <image width="132" height="127" source="objects/extinguish_house_left_1_1.png"/>
+  </tile>
+  <tile id="3">
+   <image width="132" height="127" source="objects/extinguish_house_left_1_2.png"/>
+  </tile>
+  <tile id="4">
+   <image width="132" height="127" source="objects/extinguish_house_left_1_3.png"/>
+  </tile>
+  <tile id="5">
+   <image width="132" height="127" source="objects/extinguish_house_left_1_4.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="77" name="extinguish_house_top_1" tilewidth="132" tileheight="128" tilecount="6" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/building_top_1.png"/>
+   <animation>
+    <frame tileid="1" duration="200"/>
+    <frame tileid="2" duration="200"/>
+    <frame tileid="3" duration="200"/>
+    <frame tileid="4" duration="150"/>
+    <frame tileid="5" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/extinguish_house_top_1.png"/>
+  </tile>
+  <tile id="2">
+   <image width="132" height="127" source="objects/extinguish_house_top_1_1.png"/>
+  </tile>
+  <tile id="3">
+   <image width="132" height="127" source="objects/extinguish_house_top_1_2.png"/>
+  </tile>
+  <tile id="4">
+   <image width="132" height="127" source="objects/extinguish_house_top_1_3.png"/>
+  </tile>
+  <tile id="5">
+   <image width="132" height="127" source="objects/extinguish_house_top_1_4.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="83" name="burned_house" tilewidth="132" tileheight="127" tilecount="2" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/burned_house.png"/>
+   <animation>
+    <frame tileid="0" duration="1000"/>
+    <frame tileid="1" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/burned_house_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="85" name="building_bottom_2" tilewidth="132" tileheight="127" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/building_bottom_2.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="86" name="building_right_2" tilewidth="132" tileheight="127" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/building_right_2.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="87" name="building_top_2" tilewidth="132" tileheight="128" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="128" source="objects/building_top_2.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="88" name="building_left_2" tilewidth="132" tileheight="128" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="128" source="objects/building_left_2.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="89" name="burning_house_right_2" tilewidth="132" tileheight="127" tilecount="2" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="id" type="int" value="7"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="127" source="objects/burning_house_right_2.png"/>
+   <animation>
+    <frame tileid="0" duration="250"/>
+    <frame tileid="1" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/burning_house_right_2_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="91" name="burning_house_bottom_2" tilewidth="132" tileheight="127" tilecount="2" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="id" type="int" value="5"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="127" source="objects/burning_house_bottom_2.png"/>
+   <animation>
+    <frame tileid="0" duration="250"/>
+    <frame tileid="1" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/burning_house_bottom_2_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="93" name="burning_house_left_2" tilewidth="132" tileheight="128" tilecount="2" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="id" type="int" value="6"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="128" source="objects/burning_house_left_2.png"/>
+   <animation>
+    <frame tileid="0" duration="250"/>
+    <frame tileid="1" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="128" source="objects/burning_house_left_2_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="95" name="burning_house_top_2" tilewidth="132" tileheight="128" tilecount="2" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="id" type="int" value="8"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="128" source="objects/burning_house_top_2.png"/>
+   <animation>
+    <frame tileid="0" duration="250"/>
+    <frame tileid="1" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="128" source="objects/burning_house_top_2_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="97" name="building_bottom_3" tilewidth="132" tileheight="127" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/building_bottom_3.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="98" name="building_right_3" tilewidth="132" tileheight="127" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/building_right_3.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="99" name="building_top_3" tilewidth="132" tileheight="130" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="130" source="objects/building_top_3.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="100" name="building_left_3" tilewidth="132" tileheight="130" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="130" source="objects/building_left_3.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="101" name="extinguish_house_right_3" tilewidth="132" tileheight="128" tilecount="6" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/building_right_3.png"/>
+   <animation>
+    <frame tileid="1" duration="200"/>
+    <frame tileid="2" duration="200"/>
+    <frame tileid="3" duration="200"/>
+    <frame tileid="4" duration="150"/>
+    <frame tileid="5" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/extinguish_house_right_3.png"/>
+  </tile>
+  <tile id="2">
+   <image width="132" height="127" source="objects/extinguish_house_right_3_1.png"/>
+  </tile>
+  <tile id="3">
+   <image width="132" height="127" source="objects/extinguish_house_right_3_2.png"/>
+  </tile>
+  <tile id="4">
+   <image width="132" height="127" source="objects/extinguish_house_right_3_3.png"/>
+  </tile>
+  <tile id="5">
+   <image width="132" height="127" source="objects/extinguish_house_right_3_4.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="107" name="extinguish_house_bottom_3" tilewidth="132" tileheight="128" tilecount="6" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/building_bottom_3.png"/>
+   <animation>
+    <frame tileid="1" duration="200"/>
+    <frame tileid="2" duration="200"/>
+    <frame tileid="3" duration="200"/>
+    <frame tileid="4" duration="150"/>
+    <frame tileid="5" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/extinguish_house_bottom_3.png"/>
+  </tile>
+  <tile id="2">
+   <image width="132" height="127" source="objects/extinguish_house_bottom_3_1.png"/>
+  </tile>
+  <tile id="3">
+   <image width="132" height="127" source="objects/extinguish_house_bottom_3_2.png"/>
+  </tile>
+  <tile id="4">
+   <image width="132" height="127" source="objects/extinguish_house_bottom_3_3.png"/>
+  </tile>
+  <tile id="5">
+   <image width="132" height="127" source="objects/extinguish_house_bottom_3_4.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="113" name="extinguish_house_left_3" tilewidth="133" tileheight="130" tilecount="6" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="130" source="objects/building_left_3.png"/>
+   <animation>
+    <frame tileid="1" duration="200"/>
+    <frame tileid="2" duration="200"/>
+    <frame tileid="3" duration="200"/>
+    <frame tileid="4" duration="150"/>
+    <frame tileid="5" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/extinguish_house_left_3.png"/>
+  </tile>
+  <tile id="2">
+   <image width="132" height="127" source="objects/extinguish_house_left_3_1.png"/>
+  </tile>
+  <tile id="3">
+   <image width="132" height="127" source="objects/extinguish_house_left_3_2.png"/>
+  </tile>
+  <tile id="4">
+   <image width="132" height="127" source="objects/extinguish_house_left_3_3.png"/>
+  </tile>
+  <tile id="5">
+   <image width="132" height="127" source="objects/extinguish_house_left_3_4.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="119" name="extinguish_house_top_3" tilewidth="132" tileheight="130" tilecount="6" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="130" source="objects/building_top_3.png"/>
+   <animation>
+    <frame tileid="1" duration="200"/>
+    <frame tileid="2" duration="200"/>
+    <frame tileid="3" duration="200"/>
+    <frame tileid="4" duration="150"/>
+    <frame tileid="5" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/extinguish_house_top_3.png"/>
+  </tile>
+  <tile id="2">
+   <image width="132" height="127" source="objects/extinguish_house_top_3_1.png"/>
+  </tile>
+  <tile id="3">
+   <image width="132" height="127" source="objects/extinguish_house_top_3_2.png"/>
+  </tile>
+  <tile id="4">
+   <image width="132" height="127" source="objects/extinguish_house_top_3_3.png"/>
+  </tile>
+  <tile id="5">
+   <image width="132" height="127" source="objects/extinguish_house_top_3_4.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="125" name="burning_house_right_3" tilewidth="132" tileheight="127" tilecount="2" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="id" type="int" value="3"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="127" source="objects/burning_house_right_3.png"/>
+   <animation>
+    <frame tileid="0" duration="250"/>
+    <frame tileid="1" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/burning_house_right_3_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="127" name="burning_house_bottom_3" tilewidth="132" tileheight="127" tilecount="2" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="id" type="int" value="1"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="127" source="objects/burning_house_bottom_3.png"/>
+   <animation>
+    <frame tileid="0" duration="250"/>
+    <frame tileid="1" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/burning_house_bottom_3_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="129" name="burning_house_left_3" tilewidth="133" tileheight="128" tilecount="2" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="id" type="int" value="2"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="127" source="objects/burning_house_left_3.png"/>
+   <animation>
+    <frame tileid="0" duration="250"/>
+    <frame tileid="1" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/burning_house_left_3_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="131" name="burning_house_top_3" tilewidth="132" tileheight="128" tilecount="2" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="id" type="int" value="4"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="127" source="objects/burning_house_top_3.png"/>
+   <animation>
+    <frame tileid="0" duration="250"/>
+    <frame tileid="1" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/burning_house_top_3_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="133" name="building_bottom_5" tilewidth="132" tileheight="127" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/building_bottom_5.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="134" name="building_right_5" tilewidth="132" tileheight="127" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/building_right_5.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="135" name="burning_house_right_5" tilewidth="132" tileheight="127" tilecount="2" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="id" type="int" value="3"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="127" source="objects/burning_house_right_5.png"/>
+   <animation>
+    <frame tileid="0" duration="250"/>
+    <frame tileid="1" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/burning_house_right_5_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="137" name="burning_house_bottom_5" tilewidth="132" tileheight="127" tilecount="2" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <properties>
+   <property name="id" type="int" value="1"/>
+  </properties>
+  <tile id="0">
+   <image width="132" height="127" source="objects/burning_house_bottom_5.png"/>
+   <animation>
+    <frame tileid="0" duration="250"/>
+    <frame tileid="1" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/burning_house_bottom_5_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="139" name="extinguish_house_right_5" tilewidth="132" tileheight="128" tilecount="6" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/building_right_5.png"/>
+   <animation>
+    <frame tileid="1" duration="200"/>
+    <frame tileid="2" duration="200"/>
+    <frame tileid="3" duration="200"/>
+    <frame tileid="4" duration="150"/>
+    <frame tileid="5" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/extinguish_house_right_5.png"/>
+  </tile>
+  <tile id="2">
+   <image width="132" height="127" source="objects/extinguish_house_right_5_1.png"/>
+  </tile>
+  <tile id="3">
+   <image width="132" height="127" source="objects/extinguish_house_right_5_2.png"/>
+  </tile>
+  <tile id="4">
+   <image width="132" height="127" source="objects/extinguish_house_right_5_3.png"/>
+  </tile>
+  <tile id="5">
+   <image width="132" height="127" source="objects/extinguish_house_right_5_4.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="145" name="extinguish_house_bottom_5" tilewidth="132" tileheight="128" tilecount="6" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/building_bottom_5.png"/>
+   <animation>
+    <frame tileid="1" duration="200"/>
+    <frame tileid="2" duration="200"/>
+    <frame tileid="3" duration="200"/>
+    <frame tileid="4" duration="150"/>
+    <frame tileid="5" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <image width="132" height="127" source="objects/extinguish_house_bottom_5.png"/>
+  </tile>
+  <tile id="2">
+   <image width="132" height="127" source="objects/extinguish_house_bottom_5_1.png"/>
+  </tile>
+  <tile id="3">
+   <image width="132" height="127" source="objects/extinguish_house_bottom_5_2.png"/>
+  </tile>
+  <tile id="4">
+   <image width="132" height="127" source="objects/extinguish_house_bottom_5_3.png"/>
+  </tile>
+  <tile id="5">
+   <image width="132" height="127" source="objects/extinguish_house_bottom_5_4.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="151" name="lake_left_right_1" tilewidth="132" tileheight="82" tilecount="1" columns="1">
+  <grid orientation="orthogonal" width="132" height="80"/>
+  <image source="objects/landscapeTiles_043.png" width="132" height="99"/>
+ </tileset>
+ <tileset firstgid="152" name="lake_cross_1" tilewidth="132" tileheight="82" tilecount="1" columns="1">
+  <grid orientation="orthogonal" width="132" height="66"/>
+  <image source="objects/landscapeTiles_055.png" width="132" height="99"/>
+ </tileset>
+ <tileset firstgid="153" name="lake_cross_2" tilewidth="132" tileheight="82" tilecount="1" columns="1">
+  <grid orientation="orthogonal" width="132" height="80"/>
+  <image source="objects/landscapeTiles_063.png" width="133" height="99"/>
+ </tileset>
+ <tileset firstgid="154" name="lake_top_bottom_1" tilewidth="132" tileheight="82" tilecount="1" columns="1">
+  <grid orientation="orthogonal" width="132" height="80"/>
+  <image source="objects/landscapeTiles_050.png" width="132" height="99"/>
+ </tileset>
+ <tileset firstgid="155" name="lake_cross_4" tilewidth="132" tileheight="82" tilecount="1" columns="1">
+  <grid orientation="orthogonal" width="132" height="80"/>
+  <image source="objects/landscapeTiles_062.png" width="132" height="99"/>
+ </tileset>
+ <tileset firstgid="156" name="lake_left_right_2" tilewidth="132" tileheight="66" tilecount="1" columns="1">
+  <grid orientation="orthogonal" width="132" height="64"/>
+  <image source="objects/landscapeTiles_058v2.png" width="132" height="83"/>
+ </tileset>
+ <tileset firstgid="157" name="lake_corner_3" tilewidth="132" tileheight="66" tilecount="1" columns="1">
+  <grid orientation="orthogonal" width="132" height="64"/>
+  <image source="objects/landscapeTiles_084.png" width="132" height="99"/>
+ </tileset>
+ <tileset firstgid="158" name="lake_corner_1" tilewidth="132" tileheight="64" tilecount="1" columns="1">
+  <image source="objects/landscapeTiles_076.png" width="132" height="83"/>
+ </tileset>
+ <tileset firstgid="159" name="lake_cross_3" tilewidth="132" tileheight="66" tilecount="1" columns="1">
+  <image source="objects/landscapeTiles_070.png" width="132" height="83"/>
+ </tileset>
+ <tileset firstgid="160" name="lake_corner_4" tilewidth="132" tileheight="64" tilecount="1" columns="1">
+  <image source="objects/landscapeTiles_077.png" width="132" height="83"/>
+ </tileset>
+ <tileset firstgid="161" name="lake_corner_2" tilewidth="132" tileheight="64" tilecount="1" columns="1">
+  <image source="objects/landscapeTiles_069.png" width="132" height="83"/>
+ </tileset>
+ <tileset firstgid="162" name="lake_inside" tilewidth="132" tileheight="66" tilecount="1" columns="1">
+  <image source="objects/landscapeTiles_066.png" width="132" height="83"/>
+ </tileset>
+ <tileset firstgid="163" name="lake_top_bottom_2" tilewidth="132" tileheight="66" tilecount="1" columns="1">
+  <image source="objects/landscapeTiles_051.png" width="132" height="83"/>
+ </tileset>
+ <tileset firstgid="164" name="tree" tilewidth="132" tileheight="80" tilecount="1" columns="1">
+  <image source="objects/cityTiles_067.png" width="132" height="113"/>
+ </tileset>
+ <tileset firstgid="165" name="water_circle_2" tilewidth="132" tileheight="68" tilecount="1" columns="1">
+  <image source="objects/landscapeTiles_093.png" width="133" height="99"/>
+ </tileset>
+ <tileset firstgid="166" name="water_circle_1" tilewidth="132" tileheight="68" tilecount="1" columns="1">
+  <image source="objects/landscapeTiles_085.png" width="132" height="99"/>
+ </tileset>
+ <tileset firstgid="167" name="water_circle_3" tilewidth="132" tileheight="68" tilecount="1" columns="1">
+  <image source="objects/landscapeTiles_100.png" width="132" height="99"/>
+ </tileset>
+ <tileset firstgid="168" name="water_circle_4" tilewidth="132" tileheight="68" tilecount="1" columns="1">
+  <image source="objects/landscapeTiles_092.png" width="132" height="99"/>
+ </tileset>
+ <tileset firstgid="169" name="decorative_right_1" tilewidth="132" tileheight="127" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/decorative_right_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="170" name="decorative_left_1" tilewidth="133" tileheight="128" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="133" height="127" source="objects/decorative_left_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="171" name="decorative_top_1" tilewidth="132" tileheight="128" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/decorative_top_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="172" name="decorative_bottom_1" tilewidth="132" tileheight="127" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/decorative_bottom_1.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="173" name="decorative_bottom_2" tilewidth="132" tileheight="127" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/decorative_bottom_2.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="174" name="decorative_right_2" tilewidth="132" tileheight="127" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/decorative_right_2.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="175" name="decorative_top_2" tilewidth="132" tileheight="128" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="128" source="objects/decorative_top_2.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="176" name="decorative_left_2" tilewidth="132" tileheight="128" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="128" source="objects/decorative_left_2.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="177" name="decorative_bottom_3" tilewidth="132" tileheight="127" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/decorative_bottom_3.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="178" name="decorative_right_3" tilewidth="132" tileheight="127" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="127" source="objects/decorative_right_3.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="179" name="decorative_top_3" tilewidth="132" tileheight="130" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="130" source="objects/decorative_top_3.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="180" name="decorative_left_3" tilewidth="132" tileheight="130" tilecount="1" columns="0">
+  <tileoffset x="-2" y="33"/>
+  <grid orientation="isometric" width="1" height="1"/>
+  <tile id="0">
+   <image width="132" height="130" source="objects/decorative_left_3.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="181" name="tree_left_right" tilewidth="132" tileheight="80" tilecount="1" columns="1">
+  <grid orientation="orthogonal" width="128" height="64"/>
+  <image source="objects/cityTiles_083.png" width="132" height="113"/>
+ </tileset>
+ <tileset firstgid="182" name="tree_top_bottom" tilewidth="132" tileheight="80" tilecount="1" columns="1">
+  <image source="objects/cityTiles_075.png" width="132" height="113"/>
+ </tileset>
+ <tileset firstgid="183" name="fontain" tilewidth="132" tileheight="68" tilecount="1" columns="1">
+  <grid orientation="orthogonal" width="132" height="80"/>
+  <image source="objects/cityTiles_043.png" width="132" height="101"/>
+ </tileset>
+ <tileset firstgid="184" name="way_top_bottom" tilewidth="132" tileheight="68" tilecount="1" columns="1">
+  <grid orientation="orthogonal" width="132" height="101"/>
+  <image source="objects/cityTiles_005.png" width="132" height="101"/>
+ </tileset>
+ <tileset firstgid="185" name="way_left_right" tilewidth="132" tileheight="68" tilecount="1" columns="1">
+  <image source="objects/cityTiles_010.png" width="132" height="101"/>
+ </tileset>
+ <tileset firstgid="186" name="way_turn_bottom_right" tilewidth="132" tileheight="68" tilecount="1" columns="1">
+  <image source="objects/cityTiles_020.png" width="132" height="101"/>
+ </tileset>
+ <tileset firstgid="187" name="way_turn_bottom_left" tilewidth="132" tileheight="68" tilecount="1" columns="1">
+  <image source="objects/cityTiles_028.png" width="132" height="101"/>
+ </tileset>
+ <tileset firstgid="188" name="way_turn_top_right" tilewidth="132" tileheight="68" tilecount="1" columns="1">
+  <image source="objects/cityTiles_027.png" width="132" height="101"/>
+ </tileset>
+ <tileset firstgid="189" name="way_turn_top_left" tilewidth="132" tileheight="68" tilecount="1" columns="1">
+  <image source="objects/cityTiles_035.png" width="132" height="101"/>
+ </tileset>
+ <tileset firstgid="190" name="way_end_top" tilewidth="132" tileheight="68" tilecount="1" columns="1">
+  <image source="objects/way_end_top.png" width="132" height="101"/>
+ </tileset>
+ <tileset firstgid="191" name="way_end_bottom" tilewidth="132" tileheight="68" tilecount="1" columns="1">
+  <image source="objects/way_end_bottom.png" width="132" height="101"/>
+ </tileset>
+ <tileset firstgid="192" name="way_end_left" tilewidth="132" tileheight="68" tilecount="1" columns="1">
+  <image source="objects/way_end_left.png" width="132" height="101"/>
+ </tileset>
+ <tileset firstgid="193" name="way_end_right" tilewidth="132" tileheight="68" tilecount="1" columns="1">
+  <image source="objects/way_end_right.png" width="132" height="101"/>
+ </tileset>
+ <layer id="5" name="background" width="40" height="40">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,16,10,10,10,10,10,6,10,10,10,10,10,14,10,10,10,10,10,10,6,10,10,10,10,18,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,3,70,99,99,99,99,184,87,87,87,87,20,3,21,22,22,22,22,22,184,99,99,99,20,3,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,3,88,164,164,164,164,184,164,164,164,164,20,3,21,1,164,177,177,164,184,164,1,1,20,3,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,3,88,164,152,151,153,184,152,151,153,164,20,3,21,1,164,186,185,185,189,164,1,1,20,3,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,3,88,164,155,156,159,184,155,156,159,164,20,3,21,164,164,184,164,179,179,164,1,1,20,3,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,3,88,164,164,164,164,184,164,164,164,164,70,9,185,185,193,184,164,1,1,1,1,1,20,3,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,3,70,133,133,133,133,184,133,133,133,70,70,3,133,133,133,184,133,133,133,133,133,133,133,3,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,13,10,10,10,10,10,7,10,10,10,10,10,12,10,10,10,7,10,10,10,6,10,10,10,11,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,3,21,164,87,87,164,70,164,87,87,164,134,3,100,87,87,87,87,87,164,184,87,87,87,3,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,3,21,70,177,177,70,70,152,153,177,70,134,3,100,164,164,164,164,164,164,184,180,164,98,3,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,3,88,70,186,185,185,187,155,159,191,70,134,3,100,70,70,70,70,183,183,184,180,164,98,3,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,3,88,70,190,152,153,184,185,185,189,70,134,3,100,173,173,173,173,183,183,190,180,164,98,3,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,3,21,70,175,155,159,184,70,175,175,70,134,3,100,192,185,185,185,187,70,70,70,70,70,3,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,3,21,164,97,97,164,184,164,97,97,164,134,3,100,97,97,97,97,184,85,85,85,85,85,3,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,17,10,10,10,10,10,7,10,10,10,10,10,15,10,10,10,10,10,7,10,10,10,10,10,19,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+</map>

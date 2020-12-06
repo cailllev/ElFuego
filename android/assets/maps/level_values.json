@@ -1,0 +1,41 @@
+{
+  "frequency": 3,
+  "everyXFires": 3,
+  "burningHousesRatioForGameOver": 0.33,
+
+  "fireTruckCost": 1000,
+  "fireTruckCostRise": 200,
+  "fireTruckMovement": 10,
+
+  "houseReward": 100,
+  "housePunishment": 150,
+  "houseMaxHealth": 4,
+  "houseFireHealth": 2,
+
+  "bigHouseReward": 200,
+  "bigHousePunishment": 300,
+  "bigHouseMaxHealth": 6,
+  "bigHouseFireHealth": 3,
+
+  "skyScraperReward": 400,
+  "skyScraperPunishment": 600,
+  "skyScraperMaxHealth": 8,
+  "skyScraperFireHealth": 4,
+
+  "level_1": {
+    "money": 800,
+    "turnGoal": 100
+  },
+  "level_2": {
+    "money": 1500,
+    "turnGoal": 100
+  },
+  "level_3": {
+    "money": 7000,
+    "turnGoal": 70
+  },
+  "level_4": {
+    "money": 10000,
+    "turnGoal": 80
+  }
+}

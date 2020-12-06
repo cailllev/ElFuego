@@ -1,0 +1,54 @@
+{
+  "Color": {
+    "white": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "red": {
+      "r": 1,
+      "g": 0,
+      "b": 0,
+      "a": 1
+    },
+    "yellow": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0,
+      "a": 1
+    }
+  },
+  "BitmapFont": {
+    "bold": {
+      "file": "../font/myFont/myQuicksandFire.fnt"
+    }
+  },
+  "LabelStyle": {
+    "default": {
+      "font": "bold"
+    }
+  },
+  "ImageTextButtonStyle": {
+    "default": {
+      "font": "bold",
+      "up": "level-1",
+      "down": "level-1"
+    },
+    "level 1": {
+      "font": "bold",
+      "up": "level-1",
+      "down": "level-1"
+    },
+    "level 2": {
+      "font": "bold",
+      "up": "level-2",
+      "down": "level-2"
+    },
+    "level 3": {
+      "font": "bold",
+      "up": "level-3",
+      "down": "level-3"
+    }
+  }
+}

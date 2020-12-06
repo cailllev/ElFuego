@@ -1,0 +1,12 @@
+buy_fire_truck_icon.png
+size: 170,261
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+buy_fire_truck_icon
+  rotate: false
+  xy: 0, 0
+  size: 170, 261
+  orig: 170, 261
+  offset: 0, 0
+  index: -1
